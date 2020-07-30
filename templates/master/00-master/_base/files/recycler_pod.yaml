@@ -15,6 +15,10 @@ contents:
         -
           name: recyler-container
           image: "{{.Images.infraImageKey}}"
+          resources:
+            requests:
+              memory: 30Mi
+              cpu: 10m
           command:
           - "/bin/bash"
           args:
